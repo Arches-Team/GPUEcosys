@@ -89,3 +89,13 @@ If you use this code, please cite the paper:
   url     = {https://doi.org/10.1145/3842499}
 }
 ```
+
+## License
+
+The source code in this repository is released under the [MIT License](LICENSE).
+
+### Qt
+
+This application depends on the [Qt framework](https://www.qt.io/) (version 6.10), which is used under the terms of the [GNU Lesser General Public License version 3 (LGPLv3)](https://www.gnu.org/licenses/lgpl-3.0.html). Qt is Copyright (C) The Qt Company Ltd. and other contributors.
+
+Qt is *not* included in this repository and is *not* covered by the MIT License above: it must be installed separately (e.g., the official binaries from [qt.io](https://www.qt.io/download-qt-installer-oss)), and its use is subject to its own license terms. The application links dynamically to the following unmodified Qt modules: Qt Core, Qt GUI, Qt Widgets, Qt OpenGL, Qt OpenGL Widgets, Qt Print Support, Qt SVG and Qt SQL. Qt's source code is available at [download.qt.io](https://download.qt.io/official_releases/qt/), and the licenses of the third-party components it bundles are listed at <https://doc.qt.io/qt-6/licenses-used-in-qt.html>.
