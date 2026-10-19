@@ -20,12 +20,14 @@ This repository contains the authors' implementation of the paper, with the addi
 
 ### Compiling the code
 
-We provide a Visual Studio solution, and a CMakeLists.txt. It has been tested on Windows 11.
+We provide a Visual Studio solution, and a CMakeLists.txt. It has been tested on Windows 11 and Debian 13.
 
 
 #### Dependencies
 
-The project uses Qt 6.10. The library is *not included* in this repository. On Windows, the build system expects it to be available via the ```QTDIR64``` environment variable, pointing to the root directory of the installation.
+The project uses Qt 6.10. The library is *not included* in this repository. 
+
+On Windows, the build system expects it to be available via the ```QTDIR64``` environment variable, pointing to the root directory of the installation. To copy the dlls, run ```Script/Deploy.bat``` or ```Script/Deploy.bat <cmake build dir>``` if compiling with cmake.
 
 
 ### Running the application

@@ -46,5 +46,5 @@ set WDQ=%QTDIR64%\bin\windeployqt.exe
 if exist "%VS_RELEASE%\AppGPUEcoSim.exe"    "%WDQ%" --release "%VS_RELEASE%\AppGPUEcoSim.exe"
 if exist "%VS_DEBUG%\AppGPUEcoSim.exe"      "%WDQ%"           "%VS_DEBUG%\AppGPUEcoSim.exe"
 
-if exist "%CMAKE_RELEASE%\AppGPUEcoSim.exe" "%WDQ%" --release "%CMAKE_RELEASE%\AppGPUEcoSim.exe"
-if exist "%CMAKE_DEBUG%\AppGPUEcoSim.exe"   "%WDQ%"           "%CMAKE_DEBUG%\AppGPUEcoSim.exe"
+if exist "%CMAKE_RELEASE%\EcoSim.exe" "%WDQ%" --release "%CMAKE_RELEASE%\EcoSim.exe"
+if exist "%CMAKE_DEBUG%\EcoSim.exe"   "%WDQ%"           "%CMAKE_DEBUG%\EcoSim.exe"
