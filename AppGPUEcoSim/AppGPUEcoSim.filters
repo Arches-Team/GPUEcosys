@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\qte-main-window.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\moc_qte.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-simulation.cpp">
+      <Filter>Source\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-global-environment.cpp">
+      <Filter>Source\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\terrain-raytracing-widget-editor.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\month-editor-widget.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iland_gpu.cpp">
+      <Filter>Source\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iland.cpp">
+      <Filter>Source\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\worker.cpp">
+      <Filter>Source\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-ecosystem.cpp">
+      <Filter>Source\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\lip_parser.cpp">
+      <Filter>Source\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ecosystem-data.cpp">
+      <Filter>Source\Simulator\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\resource_map.cpp">
+      <Filter>Source\Simulator\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-display-export.cpp">
+      <Filter>Source\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-editor.cpp">
+      <Filter>Source\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-debug.cpp">
+      <Filter>Source\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-scene.cpp">
+      <Filter>Source\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ecosystem-simulation-gpu.cpp">
+      <Filter>Source\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ecosystem-simulation-cpu.cpp">
+      <Filter>Source\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ecosystem-simulation.cpp">
+      <Filter>Source\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ecosystem-tuning.cpp">
+      <Filter>Source\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-keyframes.cpp">
+      <Filter>Source\Callback</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Include\qte.h">
+      <Filter>Include</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UI\main.ui">
+      <Filter>Interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UI\resources.qrc">
+      <Filter>Interface</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7251e68d-985f-46b9-a25a-3a020e3ffe0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{12105a96-0541-4c62-a457-f9cbc2c2bdee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{0d8f327e-d01f-4550-b17b-e3479e2fb44a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{6dbad736-b04f-4757-86e0-0e532812a413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{c6092a2c-618e-4f0a-aee8-4f26325f58a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Callback">
+      <UniqueIdentifier>{eaced582-651f-4e8d-8110-602d72c5ecd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UI">
+      <UniqueIdentifier>{6f983664-12fc-4a35-8bbb-d94ff28c09b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Simulator">
+      <UniqueIdentifier>{f1faf066-7078-4582-8361-c94fea622c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tools">
+      <UniqueIdentifier>{225b8e73-64df-4e09-8ff8-26aa3e56a353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Simulator\Data">
+      <UniqueIdentifier>{1c3fbc49-648d-4c33-995d-83a6769ad6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Simulator">
+      <UniqueIdentifier>{05e8a950-f640-4ae3-9cab-ddcb2cf45ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Tools">
+      <UniqueIdentifier>{ff2c61d4-ee52-484c-958f-251b8c349acf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\uic_main.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iland.h">
+      <Filter>Include\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ecosystem-data.h">
+      <Filter>Include\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\resource_map.h">
+      <Filter>Include\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\lip_parser.h">
+      <Filter>Include\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\plant-database.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ecosystem-simulation.h">
+      <Filter>Include\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gpu-timer.h">
+      <Filter>Include\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ecosystem-tuning.h">
+      <Filter>Include\Simulator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\compute_lif.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\compute_sprob.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\compute_seeding.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\compute_vigor.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\compute_regenLayers.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\compute_individuals.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\compute_canopy.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\compute_debug.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

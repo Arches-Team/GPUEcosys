@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA52AF7C-07AB-4D84-B917-562D6894E1E8}</ProjectGuid>
+    <RootNamespace>AppVoid</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>AppGPUEcoSim</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\Out\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Temp\$(Platform)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\Rule Sets\NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\Out\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Temp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>Include;ThirdParty\GLEW\Include;$(QTDIR64)\include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>_MBCS;SOLUTION_DIR=R"($(SolutionDir))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnablePREfast>false</EnablePREfast>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus /permissive- %(AdditionalOptions)</AdditionalOptions>
+      <ShowIncludes>false</ShowIncludes>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;glu32.lib;opengl32.lib;Qt6Cored.lib;Qt6OpenGLd.lib;Qt6Guid.lib;Qt6Widgetsd.lib;Qt6OpenGLWidgetsd.lib;Qt6PrintSupportd.lib;Qt6Svgd.lib;Qt6Sqld.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>ThirdParty\GLEW\Library;$(QTDIR64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Inputs>
+      </Inputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>Include;ThirdParty\GLEW\Include;$(QTDIR64)\include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/DQT_NO_DEBUG /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_MBCS;SOLUTION_DIR=R"($(SolutionDir))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ShowIncludes>false</ShowIncludes>
+      <OpenMPSupport>true</OpenMPSupport>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>ThirdParty\GLEW\Library;$(QTDIR64)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glu32.lib;opengl32.lib;Qt6Core.lib;Qt6OpenGL.lib;Qt6OpenGLWidgets.lib;Qt6Gui.lib;Qt6Widgets.lib;Qt6PrintSupport.lib;Qt6Svg.lib;Qt6Sql.lib</AdditionalDependencies>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <ProgramDatabaseFile />
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Inputs>
+      </Inputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\analyticpalette.cpp" />
+    <ClCompile Include="Source\array2.cpp" />
+    <ClCompile Include="Source\box.cpp" />
+    <ClCompile Include="Source\box2.cpp" />
+    <ClCompile Include="Source\camera.cpp" />
+    <ClCompile Include="Source\circle2.cpp" />
+    <ClCompile Include="Source\color.cpp" />
+    <ClCompile Include="Source\cpu.cpp" />
+    <ClCompile Include="Source\ecosystem-simulation.cpp" />
+    <ClCompile Include="Source\callback-scene.cpp" />
+    <ClCompile Include="Source\callback-debug.cpp" />
+    <ClCompile Include="Source\callback-display-export.cpp" />
+    <ClCompile Include="Source\callback-ecosystem.cpp" />
+    <ClCompile Include="Source\callback-editor.cpp" />
+    <ClCompile Include="Source\callback-global-environment.cpp" />
+    <ClCompile Include="Source\callback-simulation.cpp" />
+    <ClCompile Include="Source\ecosystem-data.cpp" />
+    <ClCompile Include="Source\ecosystem-simulation-gpu.cpp" />
+    <ClCompile Include="Source\evector.cpp" />
+    <ClCompile Include="Source\evector2.cpp" />
+    <ClCompile Include="Source\evectorfloat.cpp" />
+    <ClCompile Include="Source\gpu-shader.cpp" />
+    <ClCompile Include="Source\gpu-texture.cpp" />
+    <ClCompile Include="Source\gpuanalysis.cpp" />
+    <ClCompile Include="Source\heightfield-access.cpp" />
+    <ClCompile Include="Source\heightfield-carve.cpp" />
+    <ClCompile Include="Source\heightfield-flow.cpp" />
+    <ClCompile Include="Source\heightfield.cpp" />
+    <ClCompile Include="Source\heightfieldshader.cpp" />
+    <ClCompile Include="Source\histogram.cpp" />
+    <ClCompile Include="Source\integerfield2.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\mathematics.cpp" />
+    <ClCompile Include="Source\matrix.cpp" />
+    <ClCompile Include="Source\matrix4.cpp" />
+    <ClCompile Include="Source\maya-renderer.cpp" />
+    <ClCompile Include="Source\render-widget.cpp" />
+    <ClCompile Include="Source\moc_qte.cpp" />
+    <ClCompile Include="Source\month-editor-widget.cpp" />
+    <ClCompile Include="Source\qte-main-window.cpp" />
+    <ClCompile Include="Source\random.cpp" />
+    <ClCompile Include="Source\randomfast.cpp" />
+    <ClCompile Include="Source\realtime-moc.cpp" />
+    <ClCompile Include="Source\resource_map.cpp" />
+    <ClCompile Include="Source\abiotics.cpp" />
+    <ClCompile Include="Source\sampling2.cpp" />
+    <ClCompile Include="Source\scalarfield2.cpp" />
+    <ClCompile Include="Source\terrain-raytracing-widget-editor.cpp" />
+    <ClCompile Include="Source\terrain-raytracingwidget.cpp" />
+    <ClCompile Include="Source\triangle.cpp" />
+    <ClCompile Include="Source\vectorfield2.cpp" />
+    <ClCompile Include="Source\worker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Include\qte.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR64)\bin\moc.exe Include\%(Filename)%(Extension) -o Source\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc'ing  Include\%(Filename)%(Extension)  into  Source\moc_%(Filename).cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Source\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR64)\bin\moc.exe</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR64)\bin\moc.exe Include\%(Filename)%(Extension) -o Source\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc'ing  Include\%(Filename)%(Extension)  into  Source\moc_%(Filename).cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Source\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR64)\bin\moc.exe</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="UI\main.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR64)\bin\uic.exe UI\%(Filename)%(Extension) -o Include\uic_%(Filename).h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR64)\bin\uic.exe UI\%(Filename)%(Extension) -o Include\uic_%(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling  UI\%(Filename)%(Extension)  into  Include\uic_%(Filename).h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling  UI\%(Filename)%(Extension)  into  Include\uic_%(Filename).h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Include\uic_%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Include\uic_%(Filename).h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR64)\bin\uic.exe</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR64)\bin\uic.exe</AdditionalInputs>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\array.h" />
+    <ClInclude Include="Include\arrayinteger.h" />
+    <ClInclude Include="Include\box.h" />
+    <ClInclude Include="Include\camera.h" />
+    <ClInclude Include="Include\circle.h" />
+    <ClInclude Include="Include\color.h" />
+    <ClInclude Include="Include\cpu.h" />
+    <ClInclude Include="Include\ecosystem-simulation.h" />
+    <ClInclude Include="Include\ecosystem-data.h" />
+    <ClInclude Include="Include\evector.h" />
+    <ClInclude Include="Include\evectorfloat.h" />
+    <ClInclude Include="Include\Extern\renderdoc_app.h" />
+    <ClInclude Include="Include\gpu-shader.h" />
+    <ClInclude Include="Include\gpu-texture.h" />
+    <ClInclude Include="Include\gpu-timer.h" />
+    <ClInclude Include="Include\gpu-wrapper.h" />
+    <ClInclude Include="Include\gputerrainsimu.h" />
+    <ClInclude Include="Include\heightfield.h" />
+    <ClInclude Include="Include\heightfieldshader.h" />
+    <ClInclude Include="Include\histogram.h" />
+    <ClInclude Include="Include\linear.h" />
+    <ClInclude Include="Include\mathematics.h" />
+    <ClInclude Include="Include\matrix.h" />
+    <ClInclude Include="Include\mayarender.h" />
+    <ClInclude Include="Include\palette.h" />
+    <ClInclude Include="Include\random.h" />
+    <ClInclude Include="Include\ray.h" />
+    <CustomBuild Include="Include\realtime.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR64)\bin\moc.exe -f%(Filename)%(Extension) Include\%(Filename)%(Extension) -o Source\%(Filename)-moc.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc'ing  Include\%(Filename)%(Extension)  into  Source\%(Filename)-moc.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Source\%(Filename)-moc.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR64)\bin\moc.exe</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR64)\bin\moc.exe -f%(Filename)%(Extension) Include\%(Filename)%(Extension) -o Source\%(Filename)-moc.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc'ing  Include\%(Filename)%(Extension)  into  Source\%(Filename)-moc.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Source\%(Filename)-moc.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR64)\bin\moc.exe</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="Include\resource_map.h" />
+    <ClInclude Include="Include\abiotics.h" />
+    <ClInclude Include="Include\sampling.h" />
+    <ClInclude Include="Include\scalarfield.h" />
+    <ClInclude Include="Include\triangle.h" />
+    <ClInclude Include="Include\uic_main.h" />
+    <ClInclude Include="Include\vectorfield.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\boundingBox.glsl" />
+    <None Include="Shaders\compute_canopy.glsl" />
+    <None Include="Shaders\compute_debug.glsl" />
+    <None Include="Shaders\compute_fire.glsl" />
+    <None Include="Shaders\compute_individuals.glsl" />
+    <None Include="Shaders\compute_mask.glsl" />
+    <None Include="Shaders\compute_regenLayers.glsl" />
+    <None Include="Shaders\compute_seeding.glsl" />
+    <None Include="Shaders\compute_sprob.glsl" />
+    <None Include="Shaders\compute_seedsource.glsl" />
+    <None Include="Shaders\compute_stamp.glsl" />
+    <None Include="Shaders\compute_lif.glsl" />
+    <CustomBuild Include="UI\resources.qrc">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR64)\bin\rcc.exe -binary UI\%(Filename).qrc -o UI\%(Filename).rcc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling qrc to rcc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Include\rcc_%(Filename).h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR64)\bin\rcc.exe</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR64)\bin\rcc.exe -binary UI\%(Filename).qrc -o UI\%(Filename).rcc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling qrc to rcc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UI\%(Filename).rcc</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR64)\bin\rcc.exe</AdditionalInputs>
+    </CustomBuild>
+    <None Include="Shaders\compute_visu.glsl" />
+    <None Include="Shaders\heightfield_analysis.glsl" />
+    <None Include="Shaders\heightfield_raytrace.glsl" />
+    <None Include="Shaders\include\common.glsl" />
+    <None Include="Shaders\include\data.glsl" />
+    <None Include="Shaders\include\encoding.glsl" />
+    <None Include="Shaders\include\lip.glsl" />
+    <None Include="Shaders\include\random.glsl" />
+    <None Include="Shaders\include\species.glsl" />
+    <None Include="Shaders\include\vigor.glsl" />
+    <None Include="Shaders\mesh.glsl" />
+    <None Include="Shaders\pbr_terrain.glsl" />
+    <None Include="Shaders\simple_fs.glsl" />
+    <None Include="Shaders\simple_vs.glsl" />
+    <None Include="Shaders\skybox.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

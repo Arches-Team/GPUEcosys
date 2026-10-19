@@ -1,0 +1,5 @@
+moc_*.cpp
+*-moc.cpp
+uic_main.h
+build/
+*.rcc

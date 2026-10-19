@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\callback-debug.cpp">
+      <Filter>Source\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-display-export.cpp">
+      <Filter>Source\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-ecosystem.cpp">
+      <Filter>Source\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-editor.cpp">
+      <Filter>Source\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-global-environment.cpp">
+      <Filter>Source\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-scene.cpp">
+      <Filter>Source\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\callback-simulation.cpp">
+      <Filter>Source\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ecosystem-simulation.cpp">
+      <Filter>Source\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ecosystem-simulation-gpu.cpp">
+      <Filter>Source\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ecosystem-data.cpp">
+      <Filter>Source\Simulation\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\resource_map.cpp">
+      <Filter>Source\Simulation\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\month-editor-widget.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\terrain-raytracing-widget-editor.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\moc_qte.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\abiotics.cpp">
+      <Filter>Source\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\qte-main-window.cpp">
+      <Filter>Source\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\worker.cpp">
+      <Filter>Source\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\camera.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\circle2.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\color.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\evector.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\gpu-shader.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\gpu-texture.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\mathematics.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\random.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\randomfast.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\scalarfield2.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\triangle.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\vectorfield2.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\box.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\box2.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\evector2.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\matrix.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\matrix4.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\array2.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\analyticpalette.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\cpu.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\histogram.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\sampling2.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\gpuanalysis.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-access.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-flow.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\integerfield2.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\render-widget.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\terrain-raytracingwidget.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\evectorfloat.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-renderer.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\realtime-moc.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-carve.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfieldshader.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\uic_main.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gputerrainsimu.h">
+      <Filter>Include\HeightField</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\heightfield.h">
+      <Filter>Include\HeightField</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\heightfieldshader.h">
+      <Filter>Include\HeightField</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\array.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\arrayinteger.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\box.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\camera.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\circle.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\color.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cpu.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\evector.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gpu-shader.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gpu-texture.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gpu-wrapper.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\histogram.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\linear.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mathematics.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\matrix.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\palette.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\random.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ray.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sampling.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\scalarfield.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\triangle.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\vectorfield.h">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\abiotics.h">
+      <Filter>Include\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ecosystem-data.h">
+      <Filter>Include\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ecosystem-simulation.h">
+      <Filter>Include\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gpu-timer.h">
+      <Filter>Include\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\resource_map.h">
+      <Filter>Include\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mayarender.h">
+      <Filter>Include\Maya</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\evectorfloat.h">
+      <Filter>Include\Maya</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Extern\renderdoc_app.h">
+      <Filter>Include\Extern</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="UI\main.ui">
+      <Filter>Interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UI\resources.qrc">
+      <Filter>Interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Include\qte.h">
+      <Filter>Include\Misc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Include\realtime.h">
+      <Filter>Include\Maya</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\boundingBox.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\heightfield_analysis.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\heightfield_raytrace.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\mesh.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\pbr_terrain.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\simple_fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\simple_vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\skybox.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\compute_canopy.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_debug.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_fire.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_individuals.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_lif.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_mask.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_regenLayers.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_seeding.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_seedsource.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_sprob.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_stamp.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\compute_visu.glsl">
+      <Filter>Shaders\Simulation</Filter>
+    </None>
+    <None Include="Shaders\include\common.glsl">
+      <Filter>Shaders\Simulation\Include</Filter>
+    </None>
+    <None Include="Shaders\include\data.glsl">
+      <Filter>Shaders\Simulation\Include</Filter>
+    </None>
+    <None Include="Shaders\include\encoding.glsl">
+      <Filter>Shaders\Simulation\Include</Filter>
+    </None>
+    <None Include="Shaders\include\lip.glsl">
+      <Filter>Shaders\Simulation\Include</Filter>
+    </None>
+    <None Include="Shaders\include\random.glsl">
+      <Filter>Shaders\Simulation\Include</Filter>
+    </None>
+    <None Include="Shaders\include\species.glsl">
+      <Filter>Shaders\Simulation\Include</Filter>
+    </None>
+    <None Include="Shaders\include\vigor.glsl">
+      <Filter>Shaders\Simulation\Include</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{bfe9f541-b631-4c65-a9af-1b4c94e0d910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{ad0998ac-c4e5-4975-807f-28d2ccfaa2df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Callbacks">
+      <UniqueIdentifier>{f4b606c5-505b-4230-8a3d-2de261ce6c04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{009e5591-b5c9-415a-a7c5-b5542cd63739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Simulation">
+      <UniqueIdentifier>{ab3d8487-cf0f-4e9f-9088-edf4d7bc5ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Simulation\Data">
+      <UniqueIdentifier>{08ecae1a-0a41-446c-9116-85318bc87104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{8e66fd22-c545-497f-abfc-aae26bf554db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UI">
+      <UniqueIdentifier>{09cb38c8-a36d-4148-92ea-277179c937c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{97b971f3-781f-4dc9-a2c3-2fc1b0270312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{5bffe9d4-c846-4f4f-a355-ba34aebb3050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\HeightField">
+      <UniqueIdentifier>{93c50f8d-0adc-449b-96ca-7dbc91ab8a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Core">
+      <UniqueIdentifier>{ee714cb4-7240-44b2-a038-a1c9b6443dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Misc">
+      <UniqueIdentifier>{65fd9e84-5a64-4d74-b118-34ff751c90b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Maya">
+      <UniqueIdentifier>{3a6704e1-44af-4b33-872a-697997ea4a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Maya">
+      <UniqueIdentifier>{c052a8e8-344c-41d1-a547-583cfd7b9a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Misc">
+      <UniqueIdentifier>{407193fc-371c-4ee2-927d-f4935472c231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Extern">
+      <UniqueIdentifier>{1256a531-2567-46a8-b2c8-e0daf7e934a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HeightField">
+      <UniqueIdentifier>{18a631de-5c0f-4416-a1d9-f4477fefe60e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Simulation">
+      <UniqueIdentifier>{0bd60d48-89da-4746-81c0-cb3e5fb4fb2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Simulation\Include">
+      <UniqueIdentifier>{19413295-8e45-453c-a5f7-685379595555}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

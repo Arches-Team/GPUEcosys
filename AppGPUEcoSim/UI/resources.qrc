@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>Icons/Gaussian.png</file>
+    <file>Icons/Samples.png</file>
+    <file>Icons/Create.png</file>
+    <file>Icons/Edit.png</file>
+    <file>Icons/Export.png</file>
+    <file>Icons/Import.png</file>
+    <file>Icons/Save.png</file>
+    <file>Icons/Pause.png</file>
+    <file>Icons/Play.png</file>
+    <file>Icons/Reload.png</file>
+    <file>Icons/Seed.png</file>
+    <file>Icons/Step.png</file>
+    <file>Icons/Clear.png</file>
+    <file>Icons/View.png</file>
+    <file>Icons/Steps.png</file>
+    <file>Icons/Stop.png</file>
+  </qresource>
+</RCC>
